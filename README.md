@@ -13,17 +13,30 @@ transactions. Unlike traditional e-commerce engines, the payment functionality i
 
 
 
-# Routes
+# User Accessible Routes
 | Verb(s) | URI Pattern            |
 |---------|------------------------|
 | POST    | `/sign-up`             |
 | POST    | `/sign-in`             | 
 | PATCH   | `/change-password`     | 
-| DELETE  | `/sign-out`            | 
-| POST, GET| `/products`            | 
-| GET     | `/products/:id`        | 
-| GET     | `/goals/:id`           | 
-| PATCH   | `/goals/:id`           | 
-| DELETE  | `/goals/:id`           | 
+| DELETE  | `/sign-out`            |
+| GET, PATCH     | `/me` (account)             | 
+| GET | `/products`|
+| GET | `/products/:id`|
+| POST, GET| `/cart`            | 
+| PATCH, GET, DELETE     | `/cart/:id`        | 
+| GET, POST | `/orders`|
 
+
+# Admin Accessible Routes (Including the above endpoints)
+
+| Verb(s) | URI Pattern            |
+|---------|------------------------|
+| POST, GET    | `/users`             |
+| GET, PATCH, DELETE     | `/users/:id`             |
+| POST, GET    | `/accounts`             |
+| GET, PATCH, DELETE     | `/accounts/:id`             |
+| GET    | `/payments`            |
+| PATCH, GET, DELETE    | `/payments/:id`             |
+| PATCH, GET, DELETE    | `/orders/:id`             |
 
