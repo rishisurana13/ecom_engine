@@ -7,7 +7,7 @@ transactions. Unlike traditional e-commerce engines, the payment functionality i
 
 ## How to Use 
 1) Navigate to the root of the project.
-2) Run ```source ecom_engine/bin/activate``` followed by ``` pip3 install -r requirements.txt```
+2) Run ```source ecom_engine_venv/bin/activate``` followed by ``` pip3 install -r requirements.txt```
 3) Then run ```python3 manage.py runserver ``` to access the browsable API.
  **Please note you will need to use an extenstion like __modheader__ to attach the authentication token in the header for all user based actions.**
 
