@@ -26,6 +26,7 @@ transactions. Unlike traditional e-commerce engines, the payment functionality i
 | POST, GET| `/cart`            | 
 | PATCH, GET, DELETE     | `/cart/:id`        | 
 | GET, POST | `/orders`|
+| GET, POST | `/orders/:id`|
 
 
 # Admin Accessible Routes (Including the above endpoints)
